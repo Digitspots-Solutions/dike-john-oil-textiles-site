@@ -1,0 +1,42 @@
+{
+  "businessName": "Dike John Oil & Textiles",
+  "industry": "Fashion and Creative Design",
+  "tone": "warm, vibrant, and creative",
+  "tagline": "Your First Choice for Quality Fabrics and Creative Fashion Solutions",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Dike John Oil & Textiles - Your First Choice for Premium Fabrics in Aba. We bring you the finest selection of textiles and creative fashion materials that transform your design vision into reality. From traditional ankara to contemporary fashion fabrics, we stock everything you need to create stunning pieces.",
+      "imagePrompt": "Photorealistic wide shot of a vibrant Nigerian textile shop interior in Aba, with colorful rolls of ankara, lace, and premium fabrics neatly displayed on shelves, warm lighting highlighting the rich textures and patterns, customers browsing, modern retail space with traditional African aesthetic, professional photography, sharp focus, inviting atmosphere",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Located in the heart of Aba's fashion district at 2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Dike John Oil & Textiles has established itself as the go-to destination for fashion designers, tailors, and style enthusiasts across Aba North and beyond. We pride ourselves on offering an extensive range of high-quality fabrics sourced both locally and internationally. Our knowledgeable team understands the unique needs of Nigerian fashion creators and is committed to providing not just materials, but inspiration and support for your creative journey. Whether you're a professional fashion designer working on a collection or an individual looking for that perfect fabric for a special occasion, we have the expertise and inventory to serve you excellently.",
+      "imagePrompt": "Photorealistic image of a well-organized Nigerian fabric store storefront in Aba, showing the exterior with clear signage, rolls of colorful fabrics visible through large windows, busy street scene with customers entering, authentic Aba commercial architecture, natural daylight, vibrant colors, professional retail photography",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Products & Services",
+      "copy": "At Dike John Oil & Textiles, we offer a comprehensive range of products and services tailored to meet all your fashion and creative design needs:\n\n**Premium Textiles**: Extensive collection of ankara, lace, george wrappers, swiss lace, voile, chiffon, silk, cotton, denim, and specialty fabrics for every occasion.\n\n**Fashion Accessories**: Beads, sequins, buttons, zippers, threads, and embellishments to perfect your designs.\n\n**Bulk Supply**: Competitive wholesale prices for fashion designers, tailors, and boutique owners.\n\n**Expert Consultation**: Our experienced staff provides fabric recommendations, care instructions, and styling advice to help you make the best choices for your projects.\n\n**Custom Orders**: We can source specific fabrics and materials based on your unique requirements.\n\nWhether you're creating traditional Nigerian attire, contemporary fashion pieces, or creative designs, we have everything you need under one roof at competitive prices.",
+      "imagePrompt": "Photorealistic collage-style image showing various sections of a Nigerian textile shop: close-up of colorful ankara fabrics with intricate patterns, rolls of elegant lace materials, drawers of buttons and accessories, hands touching premium fabric textures, vibrant and well-lit retail environment, professional product photography, rich colors and textures",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Visit Us Today",
+      "copy": "Ready to bring your fashion vision to life? Visit Dike John Oil & Textiles today and discover why we're the first choice for quality fabrics in Aba.\n\n**Location**: 2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, Abia State\n\n**Phone**: 0816 246 1507\n\n**Opening Hours**: Monday - Saturday, 8:00 AM - 6:00 PM\n\nCan't make it to our store? Contact us via WhatsApp for inquiries about fabric availability, prices, and bulk orders. We're here to serve you with excellence and help you create fashion magic.\n\nExperience the difference of shopping at Aba's premier textile destination. Your perfect fabric awaits!",
+      "imagePrompt": "Photorealistic image of a welcoming Nigerian fabric shop interior with a friendly shopkeeper behind the counter, customers being attended to, map of Aba showing the store location, smartphone displaying WhatsApp chat about fabric orders, warm and inviting lighting, professional business photography, authentic Aba commercial setting",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "0816 246 1507",
+    "email": "",
+    "address": "2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, Abia State",
+    "whatsapp": "https://wa.me/2348162461507"
+  }
+}
