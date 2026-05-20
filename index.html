@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dike John Oil & Textiles - Your First Choice for Quality Fabrics and Creative Fashion Solutions</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&display=swap">
+    <title>Elnods Financial Mutual Funds Limited - Building Wealth Through Strategic Investment Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #192319;
-            --color-accent: #1d6851;
-            --color-bg: #F8FAF8;
-            --color-text: #141A14;
-            --color-surface: #1d1d1d;
-            --color-secondary-accent: #9d8a78;
-            --font-display: 'Raleway', sans-serif;
-            --font-body: 'Nunito Sans', sans-serif;
+            --color-primary: #1d1613;
+            --color-accent: #987341;
+            --color-bg: #F8F4EE;
+            --color-text: #1A1410;
+            --color-surface: #261c17;
+            --color-secondary-accent: #88989b;
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'Karla', sans-serif;
             --border-radius: 6px;
         }
 
@@ -33,6 +35,25 @@
             color: var(--color-text);
             background-color: var(--color-bg);
             line-height: 1.7;
+            font-size: 16px;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.02' /%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
         }
 
         @keyframes fadeUp {
@@ -46,21 +67,22 @@
             }
         }
 
-        /* Navigation */
         nav {
             position: sticky;
             top: 0;
-            background: rgba(248, 250, 248, 0.92);
+            background: rgba(248, 244, 238, 0.92);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             z-index: 1000;
-            border-bottom: 1px solid rgba(25, 35, 25, 0.1);
+            padding: 1.2rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            animation: fadeUp 0.6s ease forwards;
         }
 
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,14 +91,16 @@
         .logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: 700;
             color: var(--color-primary);
+            text-decoration: none;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
+            align-items: center;
         }
 
         .nav-links a {
@@ -84,13 +108,13 @@
             color: var(--color-text);
             font-weight: 500;
             transition: color 0.3s ease;
+            font-size: 0.95rem;
         }
 
         .nav-links a:hover {
             color: var(--color-accent);
         }
 
-        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -118,7 +142,6 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
-        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
@@ -126,7 +149,7 @@
             width: 300px;
             height: calc(100vh - 70px);
             background: var(--color-bg);
-            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -158,7 +181,12 @@
             color: var(--color-accent);
         }
 
-        /* Hero Section */
+        section {
+            padding: 80px 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         #hero {
             position: relative;
             height: 100vh;
@@ -166,19 +194,20 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: white;
+            padding: 0;
+            max-width: 100%;
             overflow: hidden;
             animation: fadeUp 0.6s ease forwards;
         }
 
-        .hero-bg {
+        .hero-image {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -2;
+            z-index: 1;
         }
 
         .hero-overlay {
@@ -188,10 +217,13 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.55);
-            z-index: -1;
+            z-index: 2;
         }
 
         .hero-content {
+            position: relative;
+            z-index: 3;
+            color: #fff;
             max-width: 900px;
             padding: 2rem;
         }
@@ -199,8 +231,8 @@
         .hero-content h1 {
             font-family: var(--font-display);
             font-size: 3.5rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
             line-height: 1.2;
         }
 
@@ -208,39 +240,33 @@
             font-size: 1.5rem;
             font-weight: 300;
             margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.95);
+            color: var(--color-accent);
+            font-family: var(--font-display);
+            font-style: italic;
         }
 
         .hero-content p {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
             line-height: 1.8;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 2.5rem;
             background: var(--color-accent);
-            color: white;
+            color: #fff;
+            padding: 1rem 2.5rem;
             text-decoration: none;
             border-radius: var(--border-radius);
             font-weight: 600;
-            font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(29, 104, 81, 0.3);
+            font-size: 1.05rem;
         }
 
         .cta-button:hover {
-            background: #165a43;
+            background: #a8834f;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(29, 104, 81, 0.4);
-        }
-
-        /* Section Styling */
-        section {
-            padding: 80px 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(152, 115, 65, 0.3);
         }
 
         #about {
@@ -248,25 +274,6 @@
             animation-delay: 0.1s;
         }
 
-        #services {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.2s;
-        }
-
-        #contact {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
-        }
-
-        h2 {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--color-primary);
-            margin-bottom: 2rem;
-        }
-
-        /* About Section */
         .about-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -279,25 +286,39 @@
             height: 500px;
             object-fit: cover;
             border-radius: var(--border-radius);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-text h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
         }
 
         .about-text p {
-            font-size: 1.05rem;
             margin-bottom: 1.5rem;
             line-height: 1.8;
         }
 
-        /* Services Section */
         #services {
-            background: white;
+            background: #fff;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        #services h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--color-primary);
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
 
         .service-card {
@@ -305,152 +326,212 @@
             padding: 2rem;
             border-radius: var(--border-radius);
             border-left: 4px solid var(--color-accent);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
             transition: all 0.3s ease;
         }
 
         .service-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .service-card h3 {
             font-family: var(--font-display);
-            font-size: 1.4rem;
-            color: var(--color-primary);
+            font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: var(--color-primary);
         }
 
         .service-card p {
             line-height: 1.7;
         }
 
-        /* Contact Section */
+        .investment-pill {
+            display: inline-block;
+            background: transparent;
+            border: 2px solid var(--color-accent);
+            color: var(--color-accent);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
         #contact {
-            background: var(--color-surface);
-            color: white;
-            text-align: center;
-            border-radius: var(--border-radius);
-            margin-top: 4rem;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
         }
 
         #contact h2 {
-            color: white;
-        }
-
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .contact-item {
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: var(--border-radius);
-        }
-
-        .contact-item h3 {
             font-family: var(--font-display);
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: var(--color-accent);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--color-primary);
         }
 
-        .contact-item a {
-            color: white;
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .contact-info strong {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        .contact-info a {
+            color: var(--color-accent);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
-        .contact-item a:hover {
-            color: var(--color-accent);
+        .contact-info a:hover {
+            color: var(--color-primary);
         }
 
-        .contact-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .contact-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            text-decoration: none;
+        .contact-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: var(--border-radius);
+        }
+
+        .contact-methods {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
         }
 
-        .phone-button {
+        .contact-btn.phone {
+            background: var(--color-primary);
+            color: #fff;
+        }
+
+        .contact-btn.email {
             background: var(--color-accent);
-            color: white;
+            color: #fff;
         }
 
-        .phone-button:hover {
-            background: #165a43;
+        .contact-btn:hover {
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .whatsapp-button {
-            background: #25D366;
-            color: white;
+        #faq {
+            background: #fff;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
         }
 
-        .whatsapp-button:hover {
-            background: #20bd5a;
-            transform: translateY(-2px);
+        #faq h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--color-primary);
         }
 
-        /* Floating WhatsApp Button */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--color-bg);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .faq-item h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            line-height: 1.8;
+        }
+
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #25D366;
-            color: white;
             width: 60px;
             height: 60px;
+            background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            text-decoration: none;
             box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-            transition: all 0.3s ease;
             z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
         }
 
-        /* Footer */
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: #fff;
+        }
+
         footer {
-            background: var(--color-primary);
-            color: white;
+            background: var(--color-surface);
+            color: #fff;
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
         }
 
-        /* Responsive Design */
+        footer p {
+            font-size: 0.95rem;
+        }
+
         @media (max-width: 1024px) {
-            section {
-                padding: 60px 1.5rem;
-            }
-
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
 
-            .hero-content .tagline {
-                font-size: 1.2rem;
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image,
+            .contact-image {
+                height: 400px;
             }
         }
 
@@ -472,190 +553,203 @@
             }
 
             .hero-content .tagline {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .hero-content p {
                 font-size: 1rem;
             }
 
-            h2 {
+            .about-text h2,
+            #services h2,
+            #contact h2,
+            #faq h2 {
                 font-size: 2rem;
-            }
-
-            .about-container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .about-image {
-                height: 350px;
             }
 
             .services-grid {
                 grid-template-columns: 1fr;
             }
 
-            .contact-buttons {
-                flex-direction: column;
+            .about-image,
+            .contact-image {
+                height: 300px;
             }
 
-            .contact-button {
-                width: 100%;
+            .contact-methods {
+                flex-direction: column;
             }
 
             .whatsapp-float {
                 width: 50px;
                 height: 50px;
-                font-size: 1.5rem;
                 bottom: 20px;
                 right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Dike John Oil & Textiles</div>
-            <ul class="nav-links">
+    <div class="content-wrapper">
+        <nav>
+            <div class="nav-container">
+                <a href="#hero" class="logo">Elnods Financial</a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Products</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
-            <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <img src="https://images.pexels.com/photos/11438391/pexels-photo-11438391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Dike John Oil & Textiles" class="hero-bg">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Dike John Oil & Textiles</h1>
-            <p class="tagline">Your First Choice for Quality Fabrics and Creative Fashion Solutions</p>
-            <p>Welcome to Dike John Oil & Textiles - Your First Choice for Premium Fabrics in Aba. We bring you the finest selection of textiles and creative fashion materials that transform your design vision into reality. From traditional ankara to contemporary fashion fabrics, we stock everything you need to create stunning pieces.</p>
-            <a href="#contact" class="cta-button">Visit Us Today</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="about-container">
-            <img src="https://images.pexels.com/photos/32184490/pexels-photo-32184490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Dike John Oil & Textiles" class="about-image">
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>Located in the heart of Aba's fashion district at 2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Dike John Oil & Textiles has established itself as the go-to destination for fashion designers, tailors, and style enthusiasts across Aba North and beyond. We pride ourselves on offering an extensive range of high-quality fabrics sourced both locally and internationally.</p>
-                <p>Our knowledgeable team understands the unique needs of Nigerian fashion creators and is committed to providing not just materials, but inspiration and support for your creative journey. Whether you're a professional fashion designer working on a collection or an individual looking for that perfect fabric for a special occasion, we have the expertise and inventory to serve you excellently.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Products & Services</h2>
-        <p>At Dike John Oil & Textiles, we offer a comprehensive range of products and services tailored to meet all your fashion and creative design needs:</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Premium Textiles</h3>
-                <p>Extensive collection of ankara, lace, george wrappers, swiss lace, voile, chiffon, silk, cotton, denim, and specialty fabrics for every occasion.</p>
-            </div>
-            <div class="service-card">
-                <h3>Fashion Accessories</h3>
-                <p>Beads, sequins, buttons, zippers, threads, and embellishments to perfect your designs.</p>
-            </div>
-            <div class="service-card">
-                <h3>Bulk Supply</h3>
-                <p>Competitive wholesale prices for fashion designers, tailors, and boutique owners.</p>
-            </div>
-            <div class="service-card">
-                <h3>Expert Consultation</h3>
-                <p>Our experienced staff provides fabric recommendations, care instructions, and styling advice to help you make the best choices for your projects.</p>
-            </div>
-            <div class="service-card">
-                <h3>Custom Orders</h3>
-                <p>We can source specific fabrics and materials based on your unique requirements.</p>
-            </div>
-        </div>
-        <p style="margin-top: 2rem;">Whether you're creating traditional Nigerian attire, contemporary fashion pieces, or creative designs, we have everything you need under one roof at competitive prices.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Visit Us Today</h2>
-        <p>Ready to bring your fashion vision to life? Visit Dike John Oil & Textiles today and discover why we're the first choice for quality fabrics in Aba.</p>
-        
-        <div class="contact-info">
-            <div class="contact-item">
-                <h3>Location</h3>
-                <p>2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, Abia State</p>
-            </div>
-            <div class="contact-item">
-                <h3>Phone</h3>
-                <p><a href="tel:08162461507">0816 246 1507</a></p>
-            </div>
-            <div class="contact-item">
-                <h3>Opening Hours</h3>
-                <p>Monday - Saturday<br>8:00 AM - 6:00 PM</p>
-            </div>
         </div>
 
-        <p>Can't make it to our store? Contact us via WhatsApp for inquiries about fabric availability, prices, and bulk orders. We're here to serve you with excellence and help you create fashion magic.</p>
+        <section id="hero">
+            <img src="https://images.pexels.com/photos/33719837/pexels-photo-33719837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Elnods Financial" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Welcome to Elnods Financial Mutual Funds Limited</h1>
+                <p class="tagline">Building Wealth Through Strategic Investment Solutions</p>
+                <p>Your Trusted Partner in Collective Investment and Wealth Management</p>
+                <p>At Elnods Financial, we provide professional underwriting and mutual fund investment services designed to help individuals and businesses in Aba and across Nigeria build sustainable wealth. With our expertise in collective investment schemes, we guide you towards achieving your financial goals through strategic portfolio management and sound investment decisions.</p>
+                <a href="#contact" class="cta-button">Get Started Today</a>
+            </div>
+        </section>
 
-        <div class="contact-buttons">
-            <a href="tel:08162461507" class="contact-button phone-button">Call Us Now</a>
-            <a href="https://wa.me/2348162461507" target="_blank" class="contact-button whatsapp-button">WhatsApp Us</a>
-        </div>
+        <section id="about">
+            <div class="about-container">
+                <img src="https://images.pexels.com/photos/36766694/pexels-photo-36766694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Elnods Financial" class="about-image">
+                <div class="about-text">
+                    <h2>About Elnods Financial Mutual Funds Limited</h2>
+                    <p>Elnods Financial Mutual Funds Limited, also known as Elnods Financial Collective Investments Co, is a leading financial services institution specializing in mutual funds and collective investment solutions. Based in the heart of Aba's commercial district, we bring decades of underwriting expertise and investment management experience to serve the financial needs of our clients.</p>
+                    <p>Our commitment is to provide transparent, professionally managed investment vehicles that deliver consistent returns while maintaining the highest standards of financial integrity. We understand the Nigerian investment landscape and tailor our services to meet the unique needs of our clients, whether you're an individual investor planning for retirement or a business seeking capital growth opportunities.</p>
+                    <p>With our principal office conveniently located at 2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, we serve clients across Abia State and beyond, offering personalized investment advisory services backed by rigorous market analysis and risk management protocols.</p>
+                </div>
+            </div>
+        </section>
 
-        <p style="margin-top: 2rem;">Experience the difference of shopping at Aba's premier textile destination. Your perfect fabric awaits!</p>
-    </section>
+        <section id="services">
+            <h2>Comprehensive Financial Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Mutual Fund Investment</h3>
+                    <p>Access professionally managed portfolios with diversified assets designed to maximize returns while managing risk. Our mutual funds cater to various risk appetites and investment horizons.</p>
+                    <span class="investment-pill">Min. Investment: ₦50,000</span>
+                </div>
+                <div class="service-card">
+                    <h3>Collective Investment Schemes</h3>
+                    <p>Join our collective investment platforms where pooled resources create opportunities for better returns and reduced individual risk exposure. We manage every aspect of your collective investment journey.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Underwriting Services</h3>
+                    <p>Benefit from our expert underwriting services for insurance products, bonds, and other financial instruments. Our thorough risk assessment ensures informed decision-making.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wealth Management</h3>
+                    <p>Receive personalized wealth management strategies tailored to your financial goals, whether it's retirement planning, education funding, or estate building.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Investment Advisory</h3>
+                    <p>Get professional guidance on investment opportunities, market trends, and portfolio optimization. Our advisors provide data-driven insights to help you make informed financial decisions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Financial Planning</h3>
+                    <p>Comprehensive financial planning services that map out your financial journey, from goal setting to execution and monitoring, ensuring you stay on track toward financial freedom.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Dike John Oil & Textiles. All rights reserved.</p>
-    </footer>
+        <section id="contact">
+            <h2>Get in Touch with Elnods Financial</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Ready to start your investment journey or need expert financial advice?</h3>
+                    <p>Our team is here to help you achieve your wealth-building goals.</p>
+                    
+                    <p><strong>Office Address:</strong><br>
+                    2/4 Onyenso Street Off 45 Omenazu by Faulks Road<br>
+                    Aba North, Abia State<br>
+                    Nigeria</p>
+                    
+                    <p><strong>Phone:</strong> <a href="tel:+2348162461507">+234 816 246 1507</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@elnodsfinancial.com">info@elnodsfinancial.com</a></p>
+                    <p><strong>Website:</strong> www.elnodsfinancial.com</p>
+                    
+                    <p><strong>Business Hours:</strong><br>
+                    Monday - Friday: 8:00 AM - 5:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/2348162461507" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-        <span>💬</span>
-    </a>
+                    <div class="contact-methods">
+                        <a href="tel:+2348162461507" class="contact-btn phone">Call Us</a>
+                        <a href="mailto:info@elnodsfinancial.com" class="contact-btn email">Email Us</a>
+                    </div>
+                    
+                    <p style="margin-top: 1.5rem;"><strong>Schedule a Consultation:</strong><br>
+                    Contact us today to schedule a free initial consultation with one of our investment specialists. We'll review your financial situation and recommend the best investment strategy for your needs.</p>
+                </div>
+                <img src="https://images.pexels.com/photos/8459996/pexels-photo-8459996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Elnods Financial" class="contact-image">
+            </div>
+        </section>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What is a mutual fund?</h3>
+                    <p>A mutual fund is an investment vehicle that pools money from multiple investors to purchase a diversified portfolio of stocks, bonds, or other securities, managed by professional fund managers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is the minimum investment amount?</h3>
+                    <p>Our mutual funds have varying minimum investment amounts starting from ₦50,000, making wealth building accessible to a wide range of investors.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How safe are my investments with Elnods Financial?</h3>
+                    <p>We operate under strict regulatory guidelines and employ rigorous risk management practices. All investments are managed with transparency, and regular reports are provided to investors.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I start investing?</h3>
+                    <p>Simply contact us via phone or WhatsApp, schedule a consultation, complete our client onboarding process, and our team will guide you through selecting the right investment products for your goals.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What returns can I expect?</h3>
+                    <p>Returns vary based on market conditions and the type of investment product. We provide realistic projections based on historical performance and current market analysis during your consultation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I withdraw my investment anytime?</h3>
+                    <p>Withdrawal terms depend on the specific investment product. Some mutual funds offer liquidity with notice periods, while others have fixed tenures. Our team will explain all terms clearly before you invest.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer investment advice?</h3>
+                    <p>Yes, our experienced underwriters and investment advisors provide comprehensive financial planning and investment advisory services tailored to your unique financial situation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are you registered and regulated?</h3>
+                    <p>Elnods Financial Mutual Funds Limited operates in compliance with all applicable Nigerian financial regulations and maintains the highest professional standards in the industry.</p>
+                </div>
+            </div>
+        </section>
 
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                mobileMenu.classList.toggle('active');
-            });
-
-            // Close mobile menu when clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        }
-    </script>
-</body>
-</html>
+        <a href="https://wa.me/2348162461507" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.188-2.113c2.325 1.288 4.962 1.963 7.812 1.963 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.25c-2.438 0-4.825-0.675-6.912-1.95l-0.5-0.287-5.113 1.325 1.35-5.025-0.325-0.513c-1.4-2.213-2.15-4.8-2.15-7.425 0-7.588 6.175-13.762 13.762-13.762s13.762 6.175 13.762 13.762-6.175 13.762-13.762 13.762zM22.462 18.788c-0.4-0.2-2.363-1.163-2.725-1.3-0.363-0.125-0.625-0.2-0.888 0.2s-1.025 1.3-1.25 1.563c-0.225 0.262-0.45 0.3-0.85 0.1s-1.663-0.612-3.163-1.95c-1.175-1.037-1.963-2.325-2.188-2.725s-0.025-0.613 0.175-0.813c0.188-0.188 0.413-0.488 0.625-0.738 0.213-0.25 0.288-0.425 0.425-0.713 0.138-0.287 0.063-0.537-0.038-0.738s-0.888-2.137-1.213-2.925c-0.313-0.775-0.638-0.662-0.888-0.675-0.225-0.012-0.488-0.012-0.75-0.012s-0.688 0.1-1.05 0.5-1.375 1.35-1.375 3.288 1.413 3.813 1.613 4.075c0.2 0.263 2.825 4.313 6.85 6.050 0.962 0.412 1.713 0.662 2.3 0.85 0.963 0.3 1.838 0.262 2.525 0.162 0.775-0.113 2.363-0.975 2.7-1.913 0.338-0.95 0.338-1
