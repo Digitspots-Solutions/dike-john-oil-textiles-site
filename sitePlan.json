@@ -1,42 +1,49 @@
 {
-  "businessName": "Dike John Oil & Textiles",
-  "industry": "Fashion and Creative Design",
-  "tone": "warm, vibrant, and creative",
-  "tagline": "Your First Choice for Quality Fabrics and Creative Fashion Solutions",
+  "businessName": "Elnods Financial Mutual Funds Limited",
+  "industry": "Financial Services & Investment",
+  "tone": "formal",
+  "tagline": "Building Wealth Through Strategic Investment Solutions",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Welcome to Dike John Oil & Textiles - Your First Choice for Premium Fabrics in Aba. We bring you the finest selection of textiles and creative fashion materials that transform your design vision into reality. From traditional ankara to contemporary fashion fabrics, we stock everything you need to create stunning pieces.",
-      "imagePrompt": "Photorealistic wide shot of a vibrant Nigerian textile shop interior in Aba, with colorful rolls of ankara, lace, and premium fabrics neatly displayed on shelves, warm lighting highlighting the rich textures and patterns, customers browsing, modern retail space with traditional African aesthetic, professional photography, sharp focus, inviting atmosphere",
+      "copy": "Welcome to Elnods Financial Mutual Funds Limited\n\nYour Trusted Partner in Collective Investment and Wealth Management\n\nAt Elnods Financial, we provide professional underwriting and mutual fund investment services designed to help individuals and businesses in Aba and across Nigeria build sustainable wealth. With our expertise in collective investment schemes, we guide you towards achieving your financial goals through strategic portfolio management and sound investment decisions.",
+      "imagePrompt": "Professional Nigerian financial institution exterior, modern glass office building in Aba city, sleek corporate architecture with Nigerian flag, bright daylight, professional atmosphere, financial district aesthetic, high-rise buildings backdrop, photorealistic, sharp details",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Located in the heart of Aba's fashion district at 2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Dike John Oil & Textiles has established itself as the go-to destination for fashion designers, tailors, and style enthusiasts across Aba North and beyond. We pride ourselves on offering an extensive range of high-quality fabrics sourced both locally and internationally. Our knowledgeable team understands the unique needs of Nigerian fashion creators and is committed to providing not just materials, but inspiration and support for your creative journey. Whether you're a professional fashion designer working on a collection or an individual looking for that perfect fabric for a special occasion, we have the expertise and inventory to serve you excellently.",
-      "imagePrompt": "Photorealistic image of a well-organized Nigerian fabric store storefront in Aba, showing the exterior with clear signage, rolls of colorful fabrics visible through large windows, busy street scene with customers entering, authentic Aba commercial architecture, natural daylight, vibrant colors, professional retail photography",
+      "copy": "About Elnods Financial Mutual Funds Limited\n\nElnods Financial Mutual Funds Limited, also known as Elnods Financial Collective Investments Co, is a leading financial services institution specializing in mutual funds and collective investment solutions. Based in the heart of Aba's commercial district, we bring decades of underwriting expertise and investment management experience to serve the financial needs of our clients.\n\nOur commitment is to provide transparent, professionally managed investment vehicles that deliver consistent returns while maintaining the highest standards of financial integrity. We understand the Nigerian investment landscape and tailor our services to meet the unique needs of our clients, whether you're an individual investor planning for retirement or a business seeking capital growth opportunities.\n\nWith our principal office conveniently located at 2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, we serve clients across Abia State and beyond, offering personalized investment advisory services backed by rigorous market analysis and risk management protocols.",
+      "imagePrompt": "Nigerian financial professionals in business meeting, diverse team of African investment advisors analyzing financial charts and documents, modern office interior in Aba, professional attire, collaborative atmosphere, computers and financial data displays, warm lighting, photorealistic",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Products & Services",
-      "copy": "At Dike John Oil & Textiles, we offer a comprehensive range of products and services tailored to meet all your fashion and creative design needs:\n\n**Premium Textiles**: Extensive collection of ankara, lace, george wrappers, swiss lace, voile, chiffon, silk, cotton, denim, and specialty fabrics for every occasion.\n\n**Fashion Accessories**: Beads, sequins, buttons, zippers, threads, and embellishments to perfect your designs.\n\n**Bulk Supply**: Competitive wholesale prices for fashion designers, tailors, and boutique owners.\n\n**Expert Consultation**: Our experienced staff provides fabric recommendations, care instructions, and styling advice to help you make the best choices for your projects.\n\n**Custom Orders**: We can source specific fabrics and materials based on your unique requirements.\n\nWhether you're creating traditional Nigerian attire, contemporary fashion pieces, or creative designs, we have everything you need under one roof at competitive prices.",
-      "imagePrompt": "Photorealistic collage-style image showing various sections of a Nigerian textile shop: close-up of colorful ankara fabrics with intricate patterns, rolls of elegant lace materials, drawers of buttons and accessories, hands touching premium fabric textures, vibrant and well-lit retail environment, professional product photography, rich colors and textures",
+      "name": "Our Services",
+      "copy": "Comprehensive Financial Services\n\nMutual Fund Investment\nAccess professionally managed portfolios with diversified assets designed to maximize returns while managing risk. Our mutual funds cater to various risk appetites and investment horizons.\n\nCollective Investment Schemes\nJoin our collective investment platforms where pooled resources create opportunities for better returns and reduced individual risk exposure. We manage every aspect of your collective investment journey.\n\nUnderwriting Services\nBenefit from our expert underwriting services for insurance products, bonds, and other financial instruments. Our thorough risk assessment ensures informed decision-making.\n\nWealth Management\nReceive personalized wealth management strategies tailored to your financial goals, whether it's retirement planning, education funding, or estate building.\n\nInvestment Advisory\nGet professional guidance on investment opportunities, market trends, and portfolio optimization. Our advisors provide data-driven insights to help you make informed financial decisions.\n\nFinancial Planning\nComprehensive financial planning services that map out your financial journey, from goal setting to execution and monitoring, ensuring you stay on track toward financial freedom.",
+      "imagePrompt": "Professional Nigerian financial services conceptual image, elegant display of investment documents, mutual fund certificates, financial charts showing upward growth trends, Nigerian naira symbols, calculator and pen on polished wooden desk, sophisticated office setting, warm professional lighting, photorealistic detail",
       "layout": "grid"
     },
     {
       "id": "contact",
-      "name": "Visit Us Today",
-      "copy": "Ready to bring your fashion vision to life? Visit Dike John Oil & Textiles today and discover why we're the first choice for quality fabrics in Aba.\n\n**Location**: 2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, Abia State\n\n**Phone**: 0816 246 1507\n\n**Opening Hours**: Monday - Saturday, 8:00 AM - 6:00 PM\n\nCan't make it to our store? Contact us via WhatsApp for inquiries about fabric availability, prices, and bulk orders. We're here to serve you with excellence and help you create fashion magic.\n\nExperience the difference of shopping at Aba's premier textile destination. Your perfect fabric awaits!",
-      "imagePrompt": "Photorealistic image of a welcoming Nigerian fabric shop interior with a friendly shopkeeper behind the counter, customers being attended to, map of Aba showing the store location, smartphone displaying WhatsApp chat about fabric orders, warm and inviting lighting, professional business photography, authentic Aba commercial setting",
-      "layout": "centered"
+      "name": "Contact Us",
+      "copy": "Get in Touch with Elnods Financial\n\nReady to start your investment journey or need expert financial advice? Our team is here to help you achieve your wealth-building goals.\n\nOffice Address:\n2/4 Onyenso Street Off 45 Omenazu by Faulks Road\nAba North, Abia State\nNigeria\n\nPhone: +234 816 246 1507\nEmail: info@elnodsfinancial.com\nWebsite: www.elnodsfinancial.com\n\nBusiness Hours:\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\nSunday: Closed\n\nWhatsApp: Click to chat with us instantly for quick inquiries and consultations.\n\nSchedule a Consultation:\nContact us today to schedule a free initial consultation with one of our investment specialists. We'll review your financial situation and recommend the best investment strategy for your needs.",
+      "imagePrompt": "Professional Nigerian office reception area in Aba, modern waiting room with comfortable seating, reception desk with friendly Nigerian receptionist, company logo on wall, plants, clean contemporary design, welcoming atmosphere, natural lighting through windows, photorealistic",
+      "layout": "default"
+    },
+    {
+      "id": "faq",
+      "name": "Frequently Asked Questions",
+      "copy": "Common Questions About Our Services\n\nWhat is a mutual fund?\nA mutual fund is an investment vehicle that pools money from multiple investors to purchase a diversified portfolio of stocks, bonds, or other securities, managed by professional fund managers.\n\nWhat is the minimum investment amount?\nOur mutual funds have varying minimum investment amounts starting from ₦50,000, making wealth building accessible to a wide range of investors.\n\nHow safe are my investments with Elnods Financial?\nWe operate under strict regulatory guidelines and employ rigorous risk management practices. All investments are managed with transparency, and regular reports are provided to investors.\n\nHow do I start investing?\nSimply contact us via phone or WhatsApp, schedule a consultation, complete our client onboarding process, and our team will guide you through selecting the right investment products for your goals.\n\nWhat returns can I expect?\nReturns vary based on market conditions and the type of investment product. We provide realistic projections based on historical performance and current market analysis during your consultation.\n\nCan I withdraw my investment anytime?\nWithdrawal terms depend on the specific investment product. Some mutual funds offer liquidity with notice periods, while others have fixed tenures. Our team will explain all terms clearly before you invest.\n\nDo you offer investment advice?\nYes, our experienced underwriters and investment advisors provide comprehensive financial planning and investment advisory services tailored to your unique financial situation.\n\nAre you registered and regulated?\nElnods Financial Mutual Funds Limited operates in compliance with all applicable Nigerian financial regulations and maintains the highest professional standards in the industry.",
+      "imagePrompt": "Clean professional FAQ visualization, Nigerian business people having consultation, advisor explaining documents to clients, friendly and informative atmosphere, modern office setting in Aba, transparent and trustworthy feeling, photorealistic, bright and clear",
+      "layout": "default"
     }
   ],
   "contact": {
-    "phone": "0816 246 1507",
-    "email": "",
-    "address": "2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, Abia State",
+    "phone": "+234 816 246 1507",
+    "email": "info@elnodsfinancial.com",
+    "address": "2/4 Onyenso Street Off 45 Omenazu by Faulks Road, Aba North, Abia State, Nigeria",
     "whatsapp": "https://wa.me/2348162461507"
   }
 }
